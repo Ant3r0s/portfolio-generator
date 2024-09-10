@@ -1,0 +1,17 @@
+portfolio-generator/
+├── app/
+│   ├── __init__.py
+│   ├── routes.py
+│   ├── forms.py
+├── static/
+│   ├── css/
+│   │   └── styles.css
+│   └── js/
+│       └── main.js
+├── templates/
+│   ├── base.html
+│   ├── index.html
+│   └── portfolio.html
+├── app.py
+├── requirements.txt
+└── venv/  # Este es el entorno virtual
