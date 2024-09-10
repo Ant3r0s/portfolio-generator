@@ -9,3 +9,4 @@ class CVForm(FlaskForm):
     education = TextAreaField('Educación', validators=[DataRequired()])
     skills = TextAreaField('Habilidades', validators=[DataRequired()])
     submit = SubmitField('Generar Portfolio')
+ 
