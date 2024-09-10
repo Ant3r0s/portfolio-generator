@@ -16,3 +16,4 @@ def index():
         return render_template('portfolio.html', name=name, profession=profession, experience=experience, education=education, skills=skills)
 
     return render_template('index.html', form=form)
+ 
