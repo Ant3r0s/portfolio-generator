@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Introduce tus datos para generar tu portfolio</h2>
+    <form method="POST" action="/">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.name.label }}<br>
+            {{ form.name(size=40) }}
+        </div>
+        <div>
+            {{ form.profession.label }}<br>
+            {{ form.profession(size=40) }}
+        </div>
+        <div>
+            {{ form.experience.label }}<br>
+            {{ form.experience(rows=5, cols=40) }}
+        </div>
+        <div>
+            {{ form.education.label }}<br>
+            {{ form.education(rows=5, cols=40) }}
+        </div>
+        <div>
+            {{ form.skills.label }}<br>
+            {{ form.skills(rows=5, cols=40) }}
+        </div>
+        <div>
+            {{ form.submit() }}
+        </div>
+    </form>
+{% endblock %}
